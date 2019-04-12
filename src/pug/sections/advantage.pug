@@ -1,0 +1,14 @@
+mixin advantage-item(imgSource, imgAlt, title)
+  li.advantage-item
+    img.advantage-pic(src=imgSource, alt=imgSource)
+    span.advantage-item-title=title
+
+section.advantage
+  .container
+    h2.advantage-title Преимущества
+    ul.advantage-list
+      +advantage-item('img/advantage-1.png', 'Товар всегда есть в наличии', 'Товар всегда есть в наличии')
+      +advantage-item('img/advantage-2.png', 'Высокое качество товара', 'Высокое качество товара')
+      +advantage-item('img/advantage-3.png', 'Удобные формы оплаты', 'Удобные формы оплаты')
+      +advantage-item('img/advantage-4.png', 'Заключение долгосрочных договоров', 'Заключение долгосрочных договоров')
+
