@@ -6,6 +6,18 @@
   background-size: cover;
   position: relative;
 
+  @media (max-width: 1200px) {
+    min-height: 600px;
+  }
+
+  @media (max-width: 650px) {
+    min-height: 500px;
+  }
+
+  @media (max-width: 450px) {
+    min-height: 400px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -32,13 +44,26 @@
     text-align: center;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 1200px) {
+      margin-top: 40px;
+      font-size: 40px;
+    }
+
+    @media (max-width: 650px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 20px;
+    }
   }
 
   &-btn {
     font-size: 29px;
     color: #ffffff;
     background-color: #cca03f;
-    border-radius: 58px 58px 58px 58px;
+    border-radius: 58px;
     border: none;
     padding: 20px 40px;
     position: absolute;
@@ -52,6 +77,25 @@
 
     &:hover {
       background-color: darken(#cca03f, 10%);
+    }
+
+    @media (max-width: 1550px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 1120px) {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+
+    @media (max-width: 940px) {
+      font-size: 16px;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 14px;
+      padding: 10px 15px;
     }
   }
 }
