@@ -1,44 +1,46 @@
-mixin products-item(imgSource, imgAlt, text)
+mixin products-item(imgSource, imgAlt, text, status, price)
     li.products-item
         img.products-pic(src=imgSource, alt=imgAlt)
         span.products-item-text=text
+        span.products-item-status=status
+        span.products-item-price=price
 
-section.products
+section#products.products
     ul.products-list
         h2.products-list-title Зерновые культуры и корма
-        +products-item('img/grain-1.png', 'Фрезерная и кормовая пшеница', 'Фрезерная и кормовая пшеница')
-        +products-item('img/grain-2.png', 'Желтая кукуруза', 'Желтая кукуруза')
-        +products-item('img/grain-3.png', 'Корм ячменя', 'Корм ячменя')
-        +products-item('img/grain-4.png', 'Сорго и Корм Овес', 'Сорго и Корм Овес')
-        +products-item('img/grain-5.png', 'Мука сои и рапса', 'Мука сои и рапса')
-        +products-item('img/grain-6.png', 'DDGS & Гранулыиз сахарной свеклы', 'DDGS & Гранулыиз сахарной свеклы')
-        +products-item('img/grain-7.png', 'Подсолнечнаямука и просо', 'Подсолнечнаямука и просо')
-        +products-item('img/grain-8.png', 'Пшеничные отруби', 'Пшеничные отруби')
+        +products-item('img/grain-1.png', 'Фрезерная и кормовая пшеница', 'Фрезерная и кормовая пшеница', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-2.png', 'Желтая кукуруза', 'Желтая кукуруза', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-3.png', 'Корм ячменя', 'Корм ячменя', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-4.png', 'Сорго и Корм Овес', 'Сорго и Корм Овес', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-5.png', 'Мука сои и рапса', 'Мука сои и рапса', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-6.png', 'DDGS & Гранулыиз сахарной свеклы', 'DDGS & Гранулыиз сахарной свеклы', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-7.png', 'Подсолнечнаямука и просо', 'Подсолнечнаямука и просо', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-8.png', 'Пшеничные отруби', 'Пшеничные отруби', 'Eсть в наличии', 'Цена за тонну 1000руб')
     ul.products-list
         h2.products-list-title Масличные культуры
-        +products-item('img/grain-9.png', 'Соевые бобы', 'Соевые бобы')
-        +products-item('img/grain-10.png', 'Рапс', 'Рапс')
-        +products-item('img/grain-11.png', 'Семена горчицы', 'Семена горчицы')
-        +products-item('img/grain-12.png', 'Льняное семя', 'Льняное семя')
-        +products-item('img/grain-13.png', 'Семена подсолнечника', 'Семена подсолнечника')
-        +products-item('img/grain-14.png', 'Семена кунжута', 'Семена кунжута')
-        +products-item('img/grain-15.png', 'Семена нигера', 'Семена нигера')
-        +products-item('img/grain-16.png', 'Арахис', 'Арахис')
+        +products-item('img/grain-9.png', 'Соевые бобы', 'Соевые бобы', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-10.png', 'Рапс', 'Рапс', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-11.png', 'Семена горчицы', 'Семена горчицы', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-12.png', 'Льняное семя', 'Льняное семя', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-13.png', 'Семена подсолнечника', 'Семена подсолнечника', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-14.png', 'Семена кунжута', 'Семена кунжута', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-15.png', 'Семена нигера', 'Семена нигера', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-16.png', 'Арахис', 'Арахис', 'Eсть в наличии', 'Цена за тонну 1000руб')
     ul.products-list
         h2.products-list-title Бобовые
-        +products-item('img/grain-17.png', 'Красная чечевицаи зеленая чечевица', 'Красная чечевицаи зеленая чечевица')
-        +products-item('img/grain-18.png', 'Кабули и Дези Нут', 'Кабули и Дези Нут')
-        +products-item('img/grain-19.png', 'Желтый горошеки зеленый горошек', 'Желтый горошеки зеленый горошек')
-        +products-item('img/grain-20.png', 'Зеленые бобы мунг', 'Зеленые бобы мунг')
-        +products-item('img/grain-21.png', 'Красная фасоль', 'Красная фасоль')
-        +products-item('img/grain-22.png', 'Белая гороховая фасоль', 'Белая гороховая фасоль')
-        +products-item('img/grain-23.png', 'Голубь (корова) горох', 'Голубь (корова) горох')
-        +products-item('img/grain-24.png', 'Фасоль борлоттии черный глаз', 'Фасоль борлоттии черный глаз')
+        +products-item('img/grain-17.png', 'Красная чечевицаи зеленая чечевица', 'Красная чечевицаи зеленая чечевица', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-18.png', 'Кабули и Дези Нут', 'Кабули и Дези Нут', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-19.png', 'Желтый горошеки зеленый горошек', 'Желтый горошеки зеленый горошек', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-20.png', 'Зеленые бобы мунг', 'Зеленые бобы мунг', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-21.png', 'Красная фасоль', 'Красная фасоль', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-22.png', 'Белая гороховая фасоль', 'Белая гороховая фасоль', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-23.png', 'Голубь (корова) горох', 'Голубь (корова) горох', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-24.png', 'Фасоль борлоттии черный глаз', 'Фасоль борлоттии черный глаз', 'Eсть в наличии', 'Цена за тонну 1000руб')
     ul.products-list
         h2.products-list-title Сахар и рис
-        +products-item('img/grain-25.png', 'Белый сахар', 'Белый сахар')
-        +products-item('img/grain-26.png', 'Рафинированный сахар', 'Рафинированный сахар')
-        +products-item('img/grain-27.png', 'Рис длиннозерный', 'Рис длиннозерный')
-        +products-item('img/grain-28.png', 'Средний рис', 'Средний рис')
-        +products-item('img/grain-29.png', 'Короткий рис', 'Короткий рис')
-        +products-item('img/grain-30.png', 'Рис пропаренный (жасмин)', 'Рис пропаренный (жасмин)')
+        +products-item('img/grain-25.png', 'Белый сахар', 'Белый сахар', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-26.png', 'Рафинированный сахар', 'Рафинированный сахар', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-27.png', 'Рис длиннозерный', 'Рис длиннозерный', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-28.png', 'Средний рис', 'Средний рис', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-29.png', 'Короткий рис', 'Короткий рис', 'Eсть в наличии', 'Цена за тонну 1000руб')
+        +products-item('img/grain-30.png', 'Рис пропаренный (жасмин)', 'Рис пропаренный (жасмин)', 'Eсть в наличии', 'Цена за тонну 1000руб')

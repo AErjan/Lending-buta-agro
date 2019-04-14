@@ -44,7 +44,20 @@
     cursor: pointer;
   }
 
-  &-item-text {
+  &-item-status {
+    display: block;
     font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  &-item-price {
+    display: block;
+    font-size: 18px;
+  }
+
+  &-item-text {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }
